@@ -28,7 +28,7 @@
 				<div class="card mb-3">
 					<div class="card-header">
 
-						<a href="<?php echo site_url('member/kelurahan/') ?>"><i class="fas fa-arrow-left"></i>
+						<a href="<?php echo site_url('member/mkelurahan/') ?>"><i class="fas fa-arrow-left"></i>
 							Back</a>
 					</div>
 					<div class="card-body">
@@ -37,12 +37,12 @@
 						<!-- Note: atribut action dikosongkan, artinya action-nya akan diproses 
 							oleh controller tempat vuew ini digunakan. Yakni index.php/admin/kelurahan/edit/ID --->
 
-							<input type="hidden" name="id_kel" value="<?php echo $kelurahan->id_kel?>" />
+							<input type="hidden" name="id_kel" value="<?php echo $mkelurahan->id_kel?>" />
 
 							<div class="form-group">
 								<label for="name">Nama kelurahan*</label>
 								<input class="form-control <?php echo form_error('nama_kel') ? 'is-invalid':'' ?>"
-								 type="text" name="nama_kel" placeholder="Nama kelurahan" value="<?php echo $kelurahan->nama_kel ?>" />
+								 type="text" name="nama_kel" placeholder="Nama kelurahan" value="<?php echo $mkelurahan->nama_kel ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('nama_kel') ?>
 								</div>
@@ -51,7 +51,7 @@
 							<div class="form-group">
 								<label for="name">ID Kecamatan*</label>
 								<input class="form-control <?php echo form_error('nama_kel') ? 'is-invalid':'' ?>"
-								 type="dropdown" name="id_kec" placeholder="ID Kecamatan" value="<?php echo $kelurahan->id_kec ?>" />
+								 type="dropdown" name="id_kec" placeholder="ID Kecamatan" value="<?php echo $mkelurahan->id_kec ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('id_kec') ?>
 								</div>

@@ -28,7 +28,7 @@
 				<div class="card mb-3">
 					<div class="card-header">
 
-						<a href="<?php echo site_url('member/kecamatan/') ?>"><i class="fas fa-arrow-left"></i>
+						<a href="<?php echo site_url('member/mkecamatan/') ?>"><i class="fas fa-arrow-left"></i>
 							Back</a>
 					</div>
 					<div class="card-body">
@@ -37,12 +37,12 @@
 						<!-- Note: atribut action dikosongkan, artinya action-nya akan diproses 
 							oleh controller tempat vuew ini digunakan. Yakni index.php/admin/Kecamatan/edit/ID --->
 
-							<input type="hidden" name="id_kec" value="<?php echo $kecamatan->id_kec?>" />
+							<input type="hidden" name="id_kec" value="<?php echo $mkecamatan->id_kec?>" />
 
 							<div class="form-group">
 								<label for="name">Nama Kecamatan*</label>
 								<input class="form-control <?php echo form_error('nama_kec') ? 'is-invalid':'' ?>"
-								 type="text" name="nama_kec" placeholder="Nama Kecamatan" value="<?php echo $kecamatan->nama_kec ?>" />
+								 type="text" name="nama_kec" placeholder="Nama Kecamatan" value="<?php echo $mkecamatan->nama_kec ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('nama_kec') ?>
 								</div>
@@ -71,7 +71,7 @@
 
 		<?php $this->load->view("member/_mpartials/scrolltop.php") ?>
 
-		<?php $this->load->view("amember/_mpartials/js.php") ?>
+		<?php $this->load->view("member/_mpartials/js.php") ?>
 
 </body>
 

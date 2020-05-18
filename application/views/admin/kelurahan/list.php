@@ -36,7 +36,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($kelurahan as $kelurahan): ?>
+									<?php foreach ($akelurahan as $kelurahan): ?>
 									<tr>
 										<td width="150">
 										<?php echo $kelurahan->id_kel ?>

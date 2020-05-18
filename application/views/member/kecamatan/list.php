@@ -21,7 +21,7 @@
 				<!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('member/kecamatan/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('member/mkecamatan/add') ?>"><i class="fas fa-plus"></i> Add New</a>
 					</div>
 					<div class="card-body">
 
@@ -35,7 +35,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($kecamatan as $kecamatan): ?>
+									<?php foreach ($mkecamatan as $kecamatan): ?>
 									<tr>
 										<td width="150">
 										<?php echo $kecamatan->id_kec ?>
@@ -43,9 +43,9 @@
 											<?php echo $kecamatan->nama_kec ?>
 										</td>
 										<td width="250">
-											<a href="<?php echo site_url('member/kecamatan/edit/'.$kecamatan->id_kec) ?>"
+											<a href="<?php echo site_url('member/mkecamatan/edit/'.$kecamatan->id_kec) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-											<a onclick="deleteConfirm('<?php echo site_url('member/kecamatan/delete/'.$kecamatan->id_kec) ?>')"
+											<a onclick="deleteConfirm('<?php echo site_url('member/mkecamatan/delete/'.$kecamatan->id_kec) ?>')"
 											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>
 									</tr>

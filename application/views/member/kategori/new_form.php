@@ -26,11 +26,11 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('member/kategori/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('member/mkategori/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
 					</div>
 					<div class="card-body">
 
-						<form action="<?php echo site_url('member/kategori/add') ?>" method="post" enctype="multipart/form-data" >
+						<form action="<?php echo site_url('member/mkategori/add') ?>" method="post" enctype="multipart/form-data" >
 							<div class="form-group">
 								<label for="name">ID Kategori*</label>
 								<input class="form-control <?php echo form_error('id_kat') ? 'is-invalid':'' ?>"

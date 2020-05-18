@@ -21,7 +21,7 @@
 				<!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('member/kategori/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('member/mkategori/add') ?>"><i class="fas fa-plus"></i> Add New</a>
 					</div>
 					<div class="card-body">
 
@@ -35,7 +35,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($kategori as $kategori): ?>
+									<?php foreach ($mkategori as $kategori): ?>
 									<tr>
 										<td width="150">
 										<?php echo $kategori->id_kat ?>
@@ -43,9 +43,9 @@
 											<?php echo $kategori->nama_kat ?>
 										</td>
 										<td width="250">
-											<a href="<?php echo site_url('member/kategori/edit/'.$kategori->id_kat) ?>"
+											<a href="<?php echo site_url('member/mkategori/edit/'.$kategori->id_kat) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-											<a onclick="deleteConfirm('<?php echo site_url('member/kategori/delete/'.$kategori->id_kat) ?>')"
+											<a onclick="deleteConfirm('<?php echo site_url('member/mkategori/delete/'.$kategori->id_kat) ?>')"
 											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>
 									</tr>

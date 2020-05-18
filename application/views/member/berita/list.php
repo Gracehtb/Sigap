@@ -20,9 +20,6 @@
 
 				<!-- DataTables -->
 				<div class="card mb-3">
-					<div class="card-header">
-						<a href="<?php echo site_url('member/mkelurahan/add') ?>"><i class="fas fa-plus"></i> Add New</a>
-					</div>
 					<div class="card-body">
 
 						<div class="table-responsive">
@@ -30,28 +27,33 @@
 								<thead>
 								<tr>
 									<tr>
-										<th>ID kelurahan</th>
-										<th>Nama kelurahan</th>
-										<th>ID kecamatan</th>
+										<th>ID berita</th>
+										<th>Judul berita</th>
+                                        <th>Isi berita</th>
+										<th>Tanggal terbit berita</th>
+                                        <th>Penulis berita</th>
+										<th>Link atau sumber berita</th>
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($mkelurahan as $kelurahan): ?>
+									<?php foreach ($mberita as $berita): ?>
 									<tr>
-										<td width="150">
-										<?php echo $kelurahan->id_kel ?>
+										<td width="50">
+										<?php echo $berita->id_berita ?>
 										</td> <td width="150">
-											<?php echo $kelurahan->nama_kel ?>
+											<?php echo $berita->judul ?>
 										</td>
-										</td> <td width="150">
-											<?php echo $kelurahan->id_kec ?>
+										<td class="small">
+											<?php echo substr($berita->isi, 0, 150) ?>...</td>
+                                        <td width="80">
+											<?php echo $berita->tgl_terbit ?>
 										</td>
-										<td width="250">
-											<a href="<?php echo site_url('member/mkelurahan/edit/'.$kelurahan->id_kel) ?>"
-											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-											<a onclick="deleteConfirm('<?php echo site_url('mmeber/mkelurahan/delete/'.$kelurahan->id_kel) ?>')"
-											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+                                        </td> <td width="100">
+											<?php echo $berita->penulis ?>
 										</td>
+                                        </td> <td width="50">
+											<?php echo $berita->link ?>
+									</td>
 									</tr>
 									<?php endforeach; ?>
 

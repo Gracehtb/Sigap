@@ -5,12 +5,12 @@ class Overview extends CI_Controller {
     {
 		parent::__construct();
 		$this->load->model("user_model");
-		if($this->user_model->isNotLogin()) redirect(site_url('admin/login'));
+		if($this->user_model->isNotLogin()) redirect(site_url('member/Mlogin'));
 	}
 
 	public function index()
 	{
         // load view admin/overview.php
-        $this->load->view("admin/overview");
+        $this->load->view("member/overview");
 	}
 }

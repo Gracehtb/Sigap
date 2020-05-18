@@ -39,7 +39,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($berita as $berita): ?>
+									<?php foreach ($aberita as $berita): ?>
 									<tr>
 										<td width="50">
 										<?php echo $berita->id_berita ?>
